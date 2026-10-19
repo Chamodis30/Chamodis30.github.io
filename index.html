@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Barbería Calle Mayor 12 · Corte clásico y barba en Madrid</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stripes" aria-hidden="true"></div>
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="#inicio">Calle Mayor <span>12</span></a>
+  <nav aria-label="Principal">
+   <a href="#servicios">Servicios</a><a href="#equipo">Equipo</a><a href="#visita">Horario</a>
+   <a class="btn" href="#reserva">Reservar cita</a>
+  </nav>
+ </div>
+</header>
+
+<main id="inicio">
+ <div class="wrap hero">
+  <div>
+   <h1>Corte clásico.<br>Afeitado a navaja.</h1>
+   <p>Barbería de barrio en el centro de Madrid. Trabajamos con cita para que nunca esperes y salgas con el corte que pediste.</p>
+   <div class="cta"><a class="btn" href="#reserva">Reservar cita</a><a class="btn ghost" href="#servicios">Ver precios</a></div>
+  </div>
+  <div class="pole" role="img" aria-label="Poste de barbero giratorio"></div>
+ </div>
+
+ <section id="servicios" class="alt">
+  <div class="wrap">
+   <h2>Servicios y precios</h2>
+   <p class="lead">Todos los servicios incluyen toalla caliente y producto de acabado.</p>
+   <div class="menu">
+    <div class="row"><div class="info"><h3>Corte de pelo<small>Tijera o máquina, lavado incluido · 40 min</small></h3></div><span class="dots"></span><span class="price">18 €</span></div>
+    <div class="row"><div class="info"><h3>Arreglo de barba<small>Perfilado, recorte y aceite · 25 min</small></h3></div><span class="dots"></span><span class="price">12 €</span></div>
+    <div class="row"><div class="info"><h3>Afeitado a navaja<small>Toalla caliente y bálsamo · 30 min</small></h3></div><span class="dots"></span><span class="price">16 €</span></div>
+    <div class="row"><div class="info"><h3>Corte y barba<small>El combo más pedido · 60 min</small></h3></div><span class="dots"></span><span class="price">27 €</span></div>
+    <div class="row"><div class="info"><h3>Corte infantil<small>Hasta 12 años · 30 min</small></h3></div><span class="dots"></span><span class="price">12 €</span></div>
+   </div>
+  </div>
+ </section>
+
+ <section id="equipo">
+  <div class="wrap">
+   <h2>El equipo</h2>
+   <p class="lead">Tres barberos, cada uno con su especialidad. Puedes elegir con quién reservar.</p>
+   <div class="team">
+    <div class="barber"><h3>Carlos</h3><p>Fundador. Más de 15 años con la navaja. Especialista en afeitado clásico y barbas largas.</p></div>
+    <div class="barber"><h3>Javi</h3><p>Degradados y cortes modernos. Si traes una foto de referencia, él la interpreta.</p></div>
+    <div class="barber"><h3>Lucía</h3><p>Corte a tijera y pelo largo. Cuida cada detalle del acabado.</p></div>
+   </div>
+  </div>
+ </section>
+
+ <section id="reserva" class="alt">
+  <div class="wrap book">
+   <div>
+    <h2>Reserva tu cita</h2>
+    <p class="lead">Elige servicio, barbero y hora. Te confirmamos por WhatsApp en menos de una hora.</p>
+    <div id="ok" role="status" aria-live="polite"></div>
+   </div>
+   <form id="f">
+    <label>Nombre<input name="n" required autocomplete="name"></label>
+    <label>Teléfono<input name="t" type="tel" required autocomplete="tel" placeholder="600 000 000"></label>
+    <label>Servicio
+     <select name="s"><option>Corte de pelo</option><option>Arreglo de barba</option><option>Afeitado a navaja</option><option>Corte y barba</option><option>Corte infantil</option></select>
+    </label>
+    <div class="two">
+     <label>Barbero<select name="b"><option>Cualquiera</option><option>Carlos</option><option>Javi</option><option>Lucía</option></select></label>
+     <label>Fecha<input name="d" type="date" required></label>
+    </div>
+    <label>Hora
+     <select name="h"><option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option><option>16:00</option><option>17:00</option><option>18:00</option><option>19:00</option></select>
+    </label>
+    <button class="btn" type="submit">Solicitar cita</button>
+   </form>
+  </div>
+ </section>
+
+ <section id="visita">
+  <div class="wrap book">
+   <div>
+    <h2>Horario</h2>
+    <table class="hours" id="hrs">
+     <tr data-d="1"><td>Lunes</td><td>Cerrado</td></tr>
+     <tr data-d="2"><td>Martes a viernes</td><td>10:00 – 20:00</td></tr>
+     <tr data-d="6"><td>Sábado</td><td>9:00 – 17:00</td></tr>
+     <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+    </table>
+   </div>
+   <div>
+    <h2>Dónde estamos</h2>
+    <p class="lead">Calle Mayor 12, 28013 Madrid<br>A 3 minutos del metro Sol (líneas 1, 2 y 3).</p>
+    <div class="cta"><a class="btn" href="tel:+34600000000">Llamar: 600 000 000</a><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Calle+Mayor+12+Madrid" rel="noopener">Cómo llegar</a></div>
+   </div>
+  </div>
+ </section>
+</main>
+
+<div class="stripes" aria-hidden="true"></div>
+<footer><div class="wrap"><span>© 2026 Barbería Calle Mayor 12</span><span>Instagram @callemayor12 · Pago con tarjeta y efectivo</span></div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
